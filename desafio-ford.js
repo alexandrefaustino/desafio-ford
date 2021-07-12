@@ -32,6 +32,8 @@ function tunnerLetterIntoNumber(list) {
 
 	const array = list.split('')	
 
+	console.log("ascii: ", tableAscii["A"]);
+
 	response = array.map((item) => {		
 		if (typeof(item) === "string") {
 			return tableAscii[item]
@@ -49,9 +51,9 @@ function shuffle(array) {
 
 function encript(vim) {
 	let response = tunnerLetterIntoNumber(vim)
-	const encrypted data = shuffle(response);
-	console.log('Resultado após a criptografia: ', encrypted data);
-	return encrypted data
+	const encryptedData = shuffle(response);
+	console.log('Resultado após a criptografia: ', encryptedData);
+	return encryptedData
 }
 
 
