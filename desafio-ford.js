@@ -31,13 +31,12 @@ tableAscii = {
 function tunnerLetterIntoNumber(list) {	
 
 	const array = list.split('')	
-
-	console.log("ascii: ", tableAscii["A"]);
-
+	
 	response = array.map((item) => {		
-		if (typeof(item) === "string") {
+		if (isNaN(item)) {			
 			return tableAscii[item]
-		} else return item		
+		} 
+		return item		
 	})
 
 	return response;
