@@ -49,7 +49,9 @@ function shuffle(array) {
 
 function encript(vim) {
 	let response = tunnerLetterIntoNumber(vim)
-	return shuffle(response);
+	const encrypted data = shuffle(response);
+	console.log('Resultado após a criptografia: ', encrypted data);
+	return encrypted data
 }
 
 
